@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Angular 2 QuickStart</title>
+
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="static/css/calc.css" rel="stylesheet">
+
+        <!-- 1. Load libraries -->
+        <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <script src="node_modules/rxjs/bundles/Rx.js"></script>
+        <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+        <!-- 2. Configure SystemJS -->
+        <script>
+            System.config({
+                packages: {
+                    app: {
+                        format: 'register',
+                        defaultExtension: 'js'
+                    }
+                }
+            });
+            System.import('app/boot')
+                .then(null, console.error.bind(console));
+        </script>
+    </head>
+
+    <!-- 3. Display the application -->
+    <body>
+        <calculator>Loading...</calculator>
+    </body>
+</html>

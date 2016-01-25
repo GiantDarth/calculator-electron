@@ -1,0 +1,28 @@
+.calc-display {
+    text-align: right;
+    background-color: rgb(66, 64, 64);
+    color: #fff;
+    height: 96px;
+    padding-right: 0.5em;
+    font-size:72px;
+    margin: 0 auto;
+    padding: 4px auto;
+}
+
+.calc-grid {
+    height: 84%;
+}
+
+button {
+    height: 112px;
+    font-size: 64px;
+    background-color: rgb(31, 53, 75);
+    color: rgb(215, 211, 206);
+    border: thin solid rgb(56, 56, 56);
+    outline: none;
+}
+
+body {
+    overflow: hidden;
+    background-color: rgb(56, 56, 56);
+}

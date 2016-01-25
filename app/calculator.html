@@ -1,0 +1,14 @@
+<div class="calc-display row"><span *ngIf="display === ''">&nbsp;</span><span class="calc-text">{{ display }}</span></div>
+
+<div class="row calc-grid">
+    <div class="col-xs-8">
+        <button class="col-sm-4" *ngFor="#number of numbers" (click)="onNumber($event, number)">{{ number.symbol }}</button>
+        <button class="col-sm-4" (click)="onPeriod($event)">{{ period.symbol }}</button>
+        <button class="col-sm-4" (click)="onSign($event)">{{ sign.symbol }}</button>
+    </div>
+    <div class="col-xs-4">
+        <button class="col-sm-6" *ngFor="#op of ops" (click)="onOp($event, op)">{{ op.symbol }}</button>
+        <button class="col-sm-12" (click)="onClear($event)">AC</button>
+        <button class="col-sm-12" (click)="onEnter($event)">=</button>
+    </div>
+</div>
